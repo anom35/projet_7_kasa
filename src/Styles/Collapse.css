@@ -1,0 +1,25 @@
+.collapse {
+  display: flex;
+  gap: 76px;
+  margin-top: 10px;
+}
+
+.collapse div {
+  display: flex;
+  width: 50%;
+}
+
+.collapse__header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 28px;
+  background-color: var(--colorRed);
+  color: white;
+  font-size: 18px;
+  padding: 17px 0px 17px 20px;
+  border-radius: 10px;
+  margin-bottom: -10px;
+  align-items: center;
+  cursor: pointer;
+}
