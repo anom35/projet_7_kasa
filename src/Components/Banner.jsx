@@ -1,13 +1,13 @@
-import fondPrincipal from "../assets/BackgroundHome.jpg"
-import fondAutre from "../assets/Background.jpg"
+import fondPrincipal from "../Assets/BackgroundHome.jpg"
+import fondAutre from "../Assets/Background.jpg"
 
-import '../styles/Banner.css'
+import '../Styles/Banner.css'
 
 function Banner(props) {
     const imageUrl = props.imageUrl ? fondPrincipal : fondAutre
     return (
         <div className='banner'>
-            <img src={imageUrl} alt="fond écran a propos" />
+            <img src={imageUrl} alt="" />
             <h1>Chez vous, partout et ailleurs</h1>
         </div>
     )

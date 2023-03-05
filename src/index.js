@@ -10,7 +10,7 @@ import ErrorPage from "./Pages/ErrorPage"
 import "./Styles/index.css"
 
 const router = createBrowserRouter([
-  { path:"/", element:<Home imageUrl="home" />, errorElement:<ErrorPage /> },
+  { path:"/", element:<Home />, errorElement:<ErrorPage /> },
   { path: "/about", element: <About />, errorElement:<ErrorPage /> },
   { path: "/logement", element: <Logement />, errorElement:<ErrorPage /> },
   { element: <ErrorPage /> }  
