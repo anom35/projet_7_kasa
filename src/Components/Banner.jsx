@@ -7,7 +7,7 @@ function Banner(props) {
     // const imageUrl = props.imageUrl ? fondPrincipal : fondAutre
     return (
         <div className='banner'>
-            <h1>Chez vous, partout et ailleurs</h1>
+            <span><h1>Chez vous, partout et ailleurs</h1></span>
         </div>
     )
 }
