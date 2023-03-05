@@ -1,0 +1,19 @@
+.about {
+  color: var(--colorRed);
+  display: flex;
+  flex-direction: column;
+  
+}
+.about span {
+  font-size: 288px;
+}
+
+.about h4 {
+  font-size: 36px;
+}
+
+.about a {
+  color: var(--colorRed);
+  font-size: 18px;
+  text-decoration: underline;
+}
