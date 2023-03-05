@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   { path:"/", element:<Home />, errorElement:<ErrorPage /> },
   { path: "/about", element: <About />, errorElement:<ErrorPage /> },
   { path: "/logement", element: <Logement />, errorElement:<ErrorPage /> },
-  { element: <ErrorPage /> }  
+  { path: "*", element: <ErrorPage /> }  // toutes les routes non trouvés iront vers errorPage
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

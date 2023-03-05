@@ -12,9 +12,9 @@ function About() {
       <Shaping>
         <Navbar />
         <div className='about'>
-          <span>404</span>
+          <span>About</span>
           <h4>Oups! La page que vous demandez n'existe pas.</h4>
-          <Link to="/">Retourner sur la page d’accueil</Link>
+          <p><Link to="/">Retourner sur la page d’accueil</Link></p>
         </div>
       </Shaping>
       <Footer />
