@@ -1,14 +1,9 @@
 .banner {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
   margin-top: 50px;
   height: 223px;
   color: #FFF;
   inset: 0;
-  height: 223px;
-  width: 100%;
   background: url("../Assets/BackgroundHome.jpg");
   background-position: center;
   background-size: cover;
@@ -37,18 +32,13 @@
   justify-content: center;
 }
 
+
+
 @media (max-width: 728px) {
   .banner h1 {
       font-size: 1.5rem;
   }
 }
-
-/* @media (max-width: 646px) {
-  .banner {
-      margin-top: 0px;
-      /* height: 111px; */
-  /* }
-}  */
 
 @media (max-width: 450px) {
   .banner h1 {
@@ -58,5 +48,10 @@
   .banner {
     margin-top: 0px;
     height: 111px;
+    border-radius: 10px;
+  }
+
+  .banner::before {
+    border-radius: 10px;
   }
 }

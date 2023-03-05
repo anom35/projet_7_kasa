@@ -27,13 +27,18 @@
 @media (max-width: 660px) {
   .logements {
       background: #FFF;
-      gap: 60px;
       padding: 0px;
   }
 }
 
 @media (max-width: 400px) {
   .logements {
+      margin-top: 20px;
       gap: 20px;
+  }
+  .fiche-logement {
+    position: relative;
+    width: 335px;
+    height: 255px;
   }
 }
