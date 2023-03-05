@@ -2,6 +2,9 @@
 .collapse {
   display: flex;
   flex-direction: column;
+}
+
+.collapse div {
   width: 100%;
 }
 
@@ -20,5 +23,10 @@
 }
 
 .visible {
+  padding: 10px;
+}
+
+.hidden {
+  padding: 10px;
 
 }

@@ -2,3 +2,6 @@
   --colorRed: #FF6060;
 }
 
+body {
+  box-sizing: border-box;
+}
