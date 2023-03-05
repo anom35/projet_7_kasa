@@ -4,10 +4,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 const router = createBrowserRouter([
-  { path: "/", element: <Home /> },
-  { path: "/about", element: <About /> },
-  { path: "/logement", element: <Logement /> },
-  { element: <Error /> }  //^ Toutes les routes qui ne sont pas reconnues, vont vers cette page d'erreur
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
