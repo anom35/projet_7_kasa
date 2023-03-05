@@ -1,0 +1,10 @@
+.shaping {
+  margin: 10px 100px;
+}
+
+
+@media (max-width: 660px) {
+  .shaping {
+      margin-inline: 20px;
+  }
+}
