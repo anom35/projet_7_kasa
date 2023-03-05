@@ -1,13 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
+
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import Logement from "./Pages/Logement"
+import ErrorPage from "./Pages/ErrorPage"
+
+import "./Styles/index.css"
 
 const router = createBrowserRouter([
-  { path: "/", element: <Home /> },
-  { path: "/about", element: <About /> },
-  { path: "/logement", element: <Logement /> },
-  { element: <Error /> }  //^ Toutes les routes qui ne sont pas reconnues, vont vers cette page d'erreur
+  { path:"/", element:<Home />, errorElement:<ErrorPage /> },
+  { path: "/about", element: <About />, errorElement:<ErrorPage /> },
+  { path: "/logement", element: <Logement />, errorElement:<ErrorPage /> },
+  { element: <ErrorPage /> }  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
