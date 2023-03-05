@@ -1,0 +1,39 @@
+
+.logements {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 60px;
+  background: #F7F7F7;
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 56px 50px;
+}
+
+.logements a {
+  text-decoration: none;
+}
+
+.fiche-logement {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+@media (max-width: 660px) {
+  .logements {
+      background: #FFF;
+      gap: 60px;
+      padding: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logements {
+      gap: 20px;
+  }
+}

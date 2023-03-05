@@ -1,0 +1,20 @@
+.footer {
+  display: grid;
+  place-items: center;
+  height: 209px;
+  background: black;
+  color: white;
+  font-size: 24px;
+}
+
+.footer img {
+  padding-top: 40px;
+  height: 60px;
+  width: 163px;
+}
+
+@media (max-width: 450px) {
+  .footer p {
+      font-size: 12px;
+  }
+}

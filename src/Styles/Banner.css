@@ -8,15 +8,15 @@
   justify-content: center;
 }
 
+
 .banner img {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
+  inset: 0;
   height: 223px;
-  /* background-position: center;
-  background-size: cover; */
+  background-image: url("../Assets/BackgroundHome.jpg");
+  background-position: center;
+  background-size: cover;
   border-radius: 25px;
 }
 
@@ -24,9 +24,10 @@
   position: absolute;
   content: "";
   inset: 0;
-  background: #000000;
+  background-image: url("../Assets/BackgroundFilter.png");
+  /* background: #000000;
   mix-blend-mode: darken;
-  opacity: 0.3;
+  opacity: 0.3; */
   border-radius: 25px;
 }
 
