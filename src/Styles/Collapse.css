@@ -1,19 +1,14 @@
+
 .collapse {
   display: flex;
-  gap: 76px;
-  margin-top: 10px;
-}
-
-.collapse div {
-  display: flex;
-  width: 50%;
+  flex-direction: column;
+  width: 100%;
 }
 
 .collapse__header {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   height: 28px;
+  width: 100%;
   background-color: var(--colorRed);
   color: white;
   font-size: 18px;
@@ -22,4 +17,8 @@
   margin-bottom: -10px;
   align-items: center;
   cursor: pointer;
+}
+
+.visible {
+
 }

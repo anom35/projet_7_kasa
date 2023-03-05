@@ -71,7 +71,12 @@ h4 {
   display: flex;
   gap: 76px;
   margin-top: 10px;
+  width: 50%;
 }
+
+/* .collapse div {
+  width: 100%;
+} */
 
 
 

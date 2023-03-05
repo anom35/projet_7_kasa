@@ -18,7 +18,9 @@ function Collapse(props) {
                 <span>{props.title}</span>
                 <i className={classChevron} />
             </p>
-            <p className={classContent}>{props.content}</p>
+            <div className={classContent}>
+                <p>{props.content}</p>
+            </div>
         </div>
     )
 }
