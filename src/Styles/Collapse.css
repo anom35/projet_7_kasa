@@ -2,41 +2,49 @@
 .collapse {
   display: flex;
   flex-direction: column;
-}
-
-.collapse div {
   width: 100%;
 }
 
 .collapse__header {
   display: flex;
+  justify-content: space-between;
   height: 28px;
   width: 100%;
   background-color: var(--colorRed);
   color: white;
   font-size: 18px;
-  padding: 17px 0px 17px 20px;
+  padding: 10px 0px 10px 20px;
   border-radius: 10px;
-  margin-bottom: -10px;
+  margin-bottom: -10px;   /* pour décaler la description sous la barre de titre */
   align-items: center;
   cursor: pointer;
 }
 
+/* affiche le contenu */
 .visible {
-  padding: 10px;
+  display: flex;
 }
 
+/* cache le contenu */
 .hidden {
-  padding: 10px;
-
+  display: none;
 }
 
 .chevronValue {
   display: flex;
-  justify-content: right;
+  /* justify-content: right; */
   padding-right: 20px;
 }
 
 .chevronValue img {
   width: 25px;
+}
+
+.description-content {
+  background-color: #f6f6f6;
+  margin: 0;
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+  border-radius: 10px;
+  z-index: -1;    /* passe la zone de contenu sous la zone de titre*/
 }

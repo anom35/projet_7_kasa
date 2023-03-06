@@ -55,14 +55,10 @@ function Logement() {
             </div>
           </div>
         </div>
-
+          
         <div className='collapseLogement'>
-          <div>
             <Collapse title="Description" content={record.description} />
-          </div>
-          <div>
             <Collapse title="Equipements" content="essai" />
-          </div>
         </div>
 
 

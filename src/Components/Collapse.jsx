@@ -5,7 +5,7 @@ import "../Styles/Collapse.css"
 
 
 
-function Collapse(props) {
+function Collapse({title, content}) {
     const [contentVisible, setContentVisible] = useState(false)
     const affContent = () => { setContentVisible(!contentVisible) }
 
@@ -15,13 +15,13 @@ function Collapse(props) {
     return (
         <div className='collapse'>
             <div className='collapse__header' onClick={affContent}>
-                <span>{props.title}</span>
+                <span>{title}</span>
                 <div className="chevronValue">
                     <img src={collapseChevron} alt=""/>
                 </div>
             </div>
             <div className={collapseContent}>
-                <p>{props.content}</p>
+                <p className='description-content'>{content}</p>
             </div>
         </div>
     )
