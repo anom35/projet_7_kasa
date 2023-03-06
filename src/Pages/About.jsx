@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import Shaping from "../Components/Shaping"
-import Navbar from "../Components/Navbar"
+import Shaping from "../Layout/Shaping"
+import Navbar from "../Layout/Navbar"
 import Banner2 from '../Components/Banner2'
-import Footer from "../Components/Footer"
+import Footer from "../Layout/Footer"
 
 import "../Styles/About.css"
 

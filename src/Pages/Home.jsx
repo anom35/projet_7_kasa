@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from "../Components/Navbar"
-import Shaping from '../Components/Shaping'
+import Navbar from "../Layout/Navbar"
+import Shaping from '../Layout/Shaping'
 import Banner from '../Components/Banner'
-import Footer from "../Components/Footer"
+import Footer from "../Layout/Footer"
 import Logements from '../Components/Logements'
 
 import "../Styles/Home.css"

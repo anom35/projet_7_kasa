@@ -55,7 +55,7 @@ h4 {
 
 .stars {
   display: flex;
-  justify-content: right;
+  font-size: 2rem;
   width: 130px;
   gap: 10px;
 }

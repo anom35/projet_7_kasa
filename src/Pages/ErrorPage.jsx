@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import Shaping from "../Components/Shaping"
-import Navbar from "../Components/Navbar"
-import Footer from "../Components/Footer"
+import Shaping from "../Layout/Shaping"
+import Navbar from "../Layout/Navbar"
+import Footer from "../Layout/Footer"
 
 import "../Styles/ErrorPage.css"
 

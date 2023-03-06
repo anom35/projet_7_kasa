@@ -1,14 +1,10 @@
 import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar as etoile } from '@fortawesome/free-solid-svg-icons'
-
-
-import Navbar from "../Components/Navbar"
+import Navbar from "../Layout/Navbar"
 import Banner from '../Components/Banner'
-import Footer from "../Components/Footer"
-import Shaping from "../Components/Shaping"
+import Footer from "../Layout/Footer"
+import Shaping from "../Layout/Shaping"
 // import Carousel from '../Components/Carousel'
 import Collapse from '../Components/Collapse'
 
@@ -52,21 +48,8 @@ function Logement() {
               {
                 arrayStars.map(element => {
                   const nbreEtoiles = parseInt(record.rating)
-                  if (element <= nbreEtoiles) {
-                    return(
-                      <FontAwesomeIcon 
-                        key={"fa_"+Math.random().toString()} 
-                        icon={etoile} 
-                        className="span1" 
-                      />)
-                  } else {
-                    return(
-                      <FontAwesomeIcon 
-                        key={"fa_"+Math.random().toString()} 
-                        icon={etoile} 
-                        className="span2" 
-                      />)
-                  }
+                  if (element <= nbreEtoiles) { return(<pan className="span1">★</pan>) } 
+                  else { return(<pan className="span2">★</pan>) }
                 })
               }
             </div>
