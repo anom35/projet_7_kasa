@@ -17,7 +17,7 @@ function About() {
         <div className='about'>
           <div className='paramsCollapse'><Collapse title="Fiabilité" content="" /></div>
           <div className='paramsCollapse'><Collapse title="Respect" content={respect} /></div>
-          <div className='paramsCollapse'><Collapse title="Service" content=" " /></div>
+          <div className='paramsCollapse'><Collapse title="Service" content="" /></div>
           <div className='paramsCollapse'><Collapse title="Responsabilité" content="" /></div>
         </div>
       </Shaping>
