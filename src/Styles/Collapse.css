@@ -9,7 +9,6 @@
   display: flex;
   justify-content: space-between;
   height: 28px;
-  width: 100%;
   background-color: var(--colorRed);
   color: white;
   font-size: 18px;
@@ -22,7 +21,7 @@
 
 /* affiche le contenu */
 .visible {
-  display: flex;
+  display: visible;
 }
 
 /* cache le contenu */
@@ -43,7 +42,7 @@
 .description-content {
   background-color: #f6f6f6;
   margin: 0;
-  width: 100%;
+  /* width: 100%; */
   padding: 20px 10px 10px 10px;
   border-radius: 10px;
   z-index: -1;    /* passe la zone de contenu sous la zone de titre*/
