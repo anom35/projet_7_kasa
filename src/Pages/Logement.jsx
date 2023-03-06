@@ -20,6 +20,7 @@ function Logement() {
   const [searchParams] = useSearchParams();
   const [idLogement] = useState(searchParams.get('_id'));
   const record = records.find(element => element.id === idLogement)
+  
   const arrayStars = [1, 2, 3, 4, 5]
   
   return (

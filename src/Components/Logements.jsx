@@ -10,12 +10,13 @@ function Logements() {
     <div className='logements'>
       {
         records.map( record => { 
-          return (<Fiche 
-            key={record.id} 
-            id={record.id} 
-            cover={record.cover} 
-            title={record.title} 
-          />)
+          return (
+            <Fiche 
+              key={record.id} 
+              id={record.id} 
+              cover={record.cover} 
+              title={record.title} 
+            />)
          })
       }
     </div>

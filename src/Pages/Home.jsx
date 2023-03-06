@@ -12,7 +12,7 @@ function Home() {
     <div>
       <Shaping>
         <Navbar />
-        <Banner imageUrl="home" />
+        <Banner />
         <Logements />
       </Shaping>
       <Footer />

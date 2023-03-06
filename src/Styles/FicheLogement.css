@@ -1,15 +1,18 @@
 .fiche-logement {
-  width: 340px;
-  height: 340px;
+  width: 30%;
+  /* height: 340px; */
   background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
   border-radius: 10px;
   transition: 0.3s;
+  min-width: 240px;
+  margin-bottom: 20px;
 }
 
 .fiche-logement img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   height: 268px;
+  object-fit: cover;
 }
 
 .fiche-logement h3 {
@@ -28,11 +31,20 @@
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+
+@media (max-width: 1096px) {
   .fiche-logement {
-      width: 335px;
-      height: 255px;
+    width: 45%;
+    min-width: 0px;
   }
+}
+
+@media (max-width: 768px) {
+  .fiche-logement { width: 100%; }
+}
+
+
+@media (max-width: 400px) {
 
   .fiche-logement h3 {
       height: 60px;

@@ -4,6 +4,8 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import "../Styles/Collapse.css"
 
+
+
 function Collapse(props) {
     const [contentVisible, setContentVisible] = useState(false)
     const affContent = () => { setContentVisible(!contentVisible) }
@@ -13,7 +15,7 @@ function Collapse(props) {
 
     return (
         <div className='collapse'>
-            <p className='collapse__header' onClick={affContent}>
+            <div className='collapse__header' onClick={affContent}>
                 <span>{props.title}</span>
                 <div className="chevronValue">
                     <FontAwesomeIcon 
@@ -21,7 +23,7 @@ function Collapse(props) {
                         icon={collapseChevron} 
                     />
                 </div>
-            </p>
+            </div>
             <div className={collapseContent}>
                 <p>{props.content}</p>
             </div>
