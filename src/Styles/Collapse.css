@@ -36,3 +36,7 @@
   justify-content: right;
   padding-right: 20px;
 }
+
+.chevronValue img {
+  width: 25px;
+}

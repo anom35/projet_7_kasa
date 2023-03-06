@@ -6,6 +6,8 @@
 // const nextQuestionNumber = questionNumberInt + 1
 
 
+// ❯❮
+
 import React from 'react'
 
 function Carousel() {
