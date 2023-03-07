@@ -40,6 +40,7 @@
 .description-content {
   position: relative;
   top: -10px;
+  color: var(--colorRed);
   background-color: #f6f6f6;
   margin: 0;
   padding: 20px 10px 10px 10px;
