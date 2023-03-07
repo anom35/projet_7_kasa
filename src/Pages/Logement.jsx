@@ -48,7 +48,7 @@ function Logement() {
               {
                 arrayStars.map(element => {
                   const nbreEtoiles = parseInt(record.rating)
-                  if (element <= nbreEtoiles) { return(<pan className="span1">★</pan>) } 
+                  if (element <= nbreEtoiles) { return(<span className="span1">★</span>) } 
                   else { return(<span className="span2">★</span>) }
                 })
               }
