@@ -6,8 +6,20 @@
 }
 
 
+@media (max-width: 860px) {
+  .shaping {
+      margin-inline: 50px;
+  }
+}
+
 @media (max-width: 660px) {
   .shaping {
-      margin-inline: 20px;
+      margin-inline: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .shaping {
+      margin-inline: 10px;
   }
 }

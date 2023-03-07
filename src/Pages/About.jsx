@@ -1,7 +1,7 @@
 import React from 'react'
 import Shaping from "../Layout/Shaping"
 import Navbar from "../Layout/Navbar"
-import Banner2 from '../Components/Banner2'
+import Banner from '../Components/Banner'
 import Footer from "../Layout/Footer"
 import Collapse from '../Components/Collapse'
 
@@ -13,7 +13,7 @@ function About() {
     <div className='flex'>
       <Shaping>
         <Navbar />
-        <Banner2 />
+        <Banner element="about" />
         <div className='about'>
           <div className='paramsCollapse'><Collapse title="Fiabilité" content="" /></div>
           <div className='paramsCollapse'><Collapse title="Respect" content={respect} /></div>

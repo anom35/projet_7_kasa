@@ -5,18 +5,23 @@ import Navbar from "../Layout/Navbar"
 import Banner from '../Components/Banner'
 import Footer from "../Layout/Footer"
 import Shaping from "../Layout/Shaping"
-// import Carousel from '../Components/Carousel'
+import ErrorPage from "../Pages/ErrorPage"
 import Collapse from '../Components/Collapse'
+
+// import Carousel from '../Components/Carousel'
 
 import "../Styles/Logement.css"
 import records from "../Datas/logements.json"
 
 
 function Logement() {
+  // récupère l'ID de l'URL
   const [searchParams] = useSearchParams();
   const [idLogement] = useState(searchParams.get('_id'));
+  // cherche l'id dans le fichier logements.json
   const record = records.find(element => element.id === idLogement)
-  if (record === undefined) return(false)
+  // undefined indique que l'URL à été modifié manuellement, envoi sur la page d'erreur
+  if (record === undefined) return(<ErrorPage />)
 
   const arrayStars = [1, 2, 3, 4, 5]
   
@@ -60,7 +65,8 @@ function Logement() {
             </div>
           </div>
         </div>
-          
+        
+        {/* affiche les composents collapse */}
         <div className='collapseLogement'>
             <Collapse title="Description" content={record.description} />
             <Collapse title="Equipements" content="essai" />
