@@ -89,7 +89,6 @@ h4 {
 
 
 @media (max-width: 686px) {
-
   .ficheLogement,
   .collapseLogement {
       display: block;
@@ -119,19 +118,9 @@ h4 {
   }
 }
 
-@media (max-width: 650px) {
-  .logement {
-      margin: 10px 20px;
-  }
 
-}
 
 @media (max-width: 450px) {
-
-  .logement {
-    margin: 10px 0px;
-  }
-  
   .description-content,
   .equipement-content {
       font-size: 12px;
@@ -144,8 +133,8 @@ h4 {
   }
 }
 
-@media (max-width: 360px) {
 
+@media (max-width: 360px) {
   .stars {
       font-size: 15px;
       gap: 5px;

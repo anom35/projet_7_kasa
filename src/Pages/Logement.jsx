@@ -16,7 +16,8 @@ function Logement() {
   const [searchParams] = useSearchParams();
   const [idLogement] = useState(searchParams.get('_id'));
   const record = records.find(element => element.id === idLogement)
-  
+  if (record === undefined) return(false)
+
   const arrayStars = [1, 2, 3, 4, 5]
   
   return (
@@ -31,8 +32,8 @@ function Logement() {
             <h4>{record.location}</h4>
             <div className='div-tags'>
               {
-                record.tags.map((element, index) => {
-                  return(<p className='tags' key={"tags-"+index.toString()}>{element}</p>)
+                record.tags.map((element) => {
+                  return(<p className='tags' key={"tags-"+element}>{element}</p>)
                 })
               }
             </div>
@@ -48,8 +49,12 @@ function Logement() {
               {
                 arrayStars.map(element => {
                   const nbreEtoiles = parseInt(record.rating)
-                  if (element <= nbreEtoiles) { return(<span className="span1">★</span>) } 
-                  else { return(<span className="span2">★</span>) }
+                  if (element <= nbreEtoiles) { 
+                    return(<span key={"star-"+element} className="span1">★</span>) 
+                  } 
+                  else { 
+                    return(<span key={"star-"+element} className="span2">★</span>) 
+                  }
                 })
               }
             </div>

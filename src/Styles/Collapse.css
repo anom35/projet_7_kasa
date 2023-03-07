@@ -8,6 +8,7 @@
 .collapse__header {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
   height: 28px;
   background-color: var(--colorRed);
   color: white;
