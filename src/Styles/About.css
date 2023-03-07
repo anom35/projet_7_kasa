@@ -1,9 +1,10 @@
 .about {
-  color: var(--colorRed);
   display: flex;
+  color: var(--colorRed);
   flex-direction: column;
   padding-inline: 108px;
   margin-bottom: 50px;
+  flex-grow: 1;
 }
 
 .flex {

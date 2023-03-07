@@ -12,16 +12,18 @@
   background-color: var(--colorRed);
   color: white;
   font-size: 18px;
-  padding: 10px 0px 10px 20px;
+  padding: 10px 20px 10px 20px;
   border-radius: 10px;
-  margin-bottom: -10px;   /* pour décaler la description sous la barre de titre */
   align-items: center;
   cursor: pointer;
 }
 
+.collapse__header span {
+  padding-right: auto;
+}
 /* affiche le contenu */
 .visible {
-  display: visible;
+  display: contents;
 }
 
 /* cache le contenu */
@@ -29,16 +31,14 @@
   display: none;
 }
 
-.chevronValue {
-  display: flex;
-  padding-right: 20px;
-}
-
 .chevronValue img {
   width: 25px;
+  height: 15px;
 }
 
 .description-content {
+  position: relative;
+  top: -10px;
   background-color: #f6f6f6;
   margin: 0;
   padding: 20px 10px 10px 10px;
