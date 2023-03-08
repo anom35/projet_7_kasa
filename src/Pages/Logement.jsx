@@ -7,6 +7,7 @@ import Footer from "../Layout/Footer"
 import Shaping from "../Layout/Shaping"
 import ErrorPage from "../Pages/ErrorPage"
 import Collapse from '../Components/Collapse'
+import CollapseList from '../Components/CollapseList'
 
 // import Carousel from '../Components/Carousel'
 
@@ -24,7 +25,7 @@ function Logement() {
   if (record === undefined) return(<ErrorPage />)
 
   const arrayStars = [1, 2, 3, 4, 5]
-  
+
   return (
     <div  className='logement'>
       <Shaping>
@@ -66,10 +67,9 @@ function Logement() {
           </div>
         </div>
         
-        {/* affiche les composents collapse */}
         <div className='collapseLogement'>
             <Collapse title="Description" content={record.description} />
-            <Collapse title="Equipements" content="essai" />
+            <CollapseList title="Equipements" content={record.equipments} />
         </div>
 
 

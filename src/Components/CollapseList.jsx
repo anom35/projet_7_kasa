@@ -5,11 +5,11 @@ import "../Styles/Collapse.css"
 
 
 
-function Collapse({title, content}) {
+function CollapseList({title, content}) {
     const [contentVisible, setContentVisible] = useState(false)
     const affContent = () => { setContentVisible(!contentVisible) }
 
-    const collapseContent = (contentVisible ? "visible" : "hidden") + " collapse"
+    const collapseContent = (contentVisible ? (content !== "" ? "visible" : "hidden") : "hidden") + " collapse"
     const collapseChevron = (contentVisible ? chevronUp : chevronDown)
 
     return (
@@ -21,10 +21,16 @@ function Collapse({title, content}) {
                 </div>
             </div>
             <div className={collapseContent}>
-                <p className='description-content'>{content}</p>
+              <div className='description-content-list' key={"equip"}>
+                {
+                  content.map((element, index) => {
+                    return (<p className='equipement-content' key={"equip-"+index.toString()}>{element}</p>)
+                  })
+                }
+              </div>
             </div>
         </div>
     )
 }
 
-export default Collapse
+export default CollapseList

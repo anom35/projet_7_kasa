@@ -24,7 +24,7 @@
 }
 /* affiche le contenu */
 .visible {
-  display: contents;
+  display: block;
 }
 
 /* cache le contenu */
@@ -46,4 +46,20 @@
   padding: 20px 10px 10px 10px;
   border-radius: 10px;
   z-index: -1;    /* passe la zone de contenu sous la zone de titre*/
+}
+
+.description-content-list {
+  position: relative;
+  top: -10px;
+  margin: 0;
+  color: var(--colorRed);
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 20px 10px 10px 10px;
+  border-radius: 10px;
+  z-index: -1;    /* passe la zone de contenu sous la zone de titre*/
+}
+
+.equipement-content {
+  margin: 0;
 }
