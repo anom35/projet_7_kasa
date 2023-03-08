@@ -41,11 +41,13 @@ h4 {
 }
 
 .div-etoiles p {
+  display: flex;
+  justify-content: flex-end;
   font-size: 18px;
   width: 93px;
   height: 52px;
-  padding-top: 10px;
-  text-align: right;
+  align-items: center;
+  text-shadow: 0px 0px 5px rgb(180, 166, 166);
 }
 
 .div-etoiles img {
@@ -53,6 +55,7 @@ h4 {
   height: 64px;
   border-radius: 50%;
   margin-top: 15px;
+  box-shadow: 0px 0px 10px rgb(175, 136, 136);
 }
 
 .div-description {
@@ -68,6 +71,7 @@ h4 {
 
 .span1 {
   color: var(--colorRed);
+  text-shadow: 0px 0px 5px rgb(180, 166, 166);
 }
 
 .span2 {
