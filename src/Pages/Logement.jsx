@@ -2,14 +2,12 @@ import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 
 import Navbar from "../Layout/Navbar"
-import Banner from '../Components/Banner'
 import Footer from "../Layout/Footer"
 import Shaping from "../Layout/Shaping"
 import ErrorPage from "../Pages/ErrorPage"
 import Collapse from '../Components/Collapse'
 import CollapseList from '../Components/CollapseList'
-
-// import Carousel from '../Components/Carousel'
+import Carousel from '../Components/Carousel'
 
 import "../Styles/Logement.css"
 import records from "../Datas/logements.json"
@@ -30,7 +28,7 @@ function Logement() {
     <div  className='logement'>
       <Shaping>
         <Navbar />
-        <Banner imageUrl="logement"/>
+        <Carousel pictures={record.pictures}/>
 
         <div className='ficheLogement'>
           <div className='div-description'>

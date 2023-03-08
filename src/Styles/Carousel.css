@@ -1,0 +1,50 @@
+.carousel {
+  position: relative;
+  height: 415px;
+  width: 100%;
+}
+
+.carousel p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  top: 80%;
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+}
+
+.classImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: #b3b1b1 0px 0px 24px;
+}
+
+.carousel button {
+  border: none;
+  background-color: transparent;
+}
+
+.classChevronGauche {
+  position: absolute;
+  content: "";
+  inset: 0;
+  top: 40%;
+  font-size: 3rem;
+  cursor: pointer;
+  left: 0;
+}
+
+.classChevronDroit {
+  position: absolute;
+  content: "";
+  inset: 0;
+  top: 40%;
+  font-size: 3rem;
+  cursor: pointer;
+  left: calc(100% - 50px)
+}
