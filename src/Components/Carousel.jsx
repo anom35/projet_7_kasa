@@ -6,7 +6,7 @@ import "../Styles/Carousel.css"
 
 function Carousel({pictures}) {
   // const [affPicture, setAffPicture] = useState(0)
-  const [cpt, setCpt] = useState(1)
+  const [cpt, setCpt] = useState(0)
   const nbrePictures = pictures.length-1
   if (cpt < 0) setCpt(nbrePictures)
   if (cpt > nbrePictures) setCpt(0)
