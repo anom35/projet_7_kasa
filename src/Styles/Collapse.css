@@ -63,3 +63,10 @@
 .equipement-content {
   margin: 0;
 }
+
+@media (max-width: 450px) {
+  .collapse__header {
+    font-size: 13px;
+    height: 20px;
+  }
+}

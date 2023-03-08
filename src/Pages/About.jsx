@@ -18,10 +18,10 @@ function About() {
         <Navbar />
         <Banner element="about" />
         <div className='about'>
-          <div className='paramsCollapse'><Collapse title="Fiabilité" content={fiabilite} /></div>
-          <div className='paramsCollapse'><Collapse title="Respect" content={respect} /></div>
-          <div className='paramsCollapse'><Collapse title="Service" content={service} /></div>
-          <div className='paramsCollapse'><Collapse title="Responsabilité" content={securite} /></div>
+          <div><Collapse title="Fiabilité" content={fiabilite} /></div>
+          <div><Collapse title="Respect" content={respect} /></div>
+          <div><Collapse title="Service" content={service} /></div>
+          <div><Collapse title="Responsabilité" content={securite} /></div>
         </div>
       </Shaping>
       <Footer />

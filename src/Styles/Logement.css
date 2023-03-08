@@ -93,26 +93,21 @@ h4 {
   .collapseLogement {
       display: block;
   }
-
   .description {
       margin-bottom: 30px;
   }
-
   .bloc-stars {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
   }
-
   .stars {
       align-items: center;
       justify-content: left;
   }
-
   .tags {
       font-size: 10px;
   }
-
   .div-tags {
       gap: 10px;
   }
@@ -130,6 +125,9 @@ h4 {
   .equipements-header {
       font-size: 13px;
       padding: 8px 0px 8px 20px;
+  }
+  .span1, .span2 {
+    font-size: 18px;
   }
 }
 

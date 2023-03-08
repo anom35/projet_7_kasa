@@ -13,9 +13,6 @@
   flex-direction: column;
 }
 
-.paramsCollapse {
-  padding-top: 30px;
-}
 
 @media (max-width: 800px) {
   .about {
