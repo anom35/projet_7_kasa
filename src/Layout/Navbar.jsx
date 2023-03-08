@@ -1,11 +1,13 @@
-import {NavLink} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import logo from '../Assets/Logo.png'
 import '../Styles/Navbar.css'
 
 function Banner() {
 	return (
     <div className='navbar'>
-        <img src={logo} alt='Logo du site Kasa' />
+        <Link to="/">
+            <img src={logo} alt='Logo du site Kasa' />
+        </Link>
         <nav>
             <ul>
                 <NavLink 
