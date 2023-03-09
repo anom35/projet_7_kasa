@@ -17,10 +17,10 @@ function Carousel({pictures}) {
       </div>
       <div>
         <button onClick={() => setCpt(cpt - 1)}>{cpt}
-          <img src={chevronGauche} className='classChevronGauche' alt='flèche gauche pour changer de photo' />
+          <img src={chevronGauche} className='classChevronGauche' alt={'flèche gauche pour changer de photo '+cpt} />
         </button>
         <button onClick={() => setCpt(cpt + 1)}>{cpt}
-          <img src={chevronDroit} className='classChevronDroit' alt='flèche droite pour changer de photo' />
+          <img src={chevronDroit} className='classChevronDroit' alt={'flèche droite pour changer de photo '+cpt} />
         </button>
       </div>
       <p>{cpt+1}/{nbrePictures+1}</p>
