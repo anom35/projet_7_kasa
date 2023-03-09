@@ -1,66 +1,52 @@
 .banner-commun {
-  position: relative;
   margin-top: 30px;
   height: 223px;
   color: #FFF;
-  inset: 0;
   border-radius: 25px;
   box-shadow: 0px 0px 15px rgb(189, 182, 182);
 }
 
-.banner.banner-commun {
-  background: url("../Assets/BackgroundHome.jpg");
+.banner {
+  background: url("../Assets/BackgroundFilter.png"), url("../Assets/BackgroundHome.jpg");
   background-position: center;
   background-size: cover;
-}
-
-.banner2.banner-commun {
-  background: url("../Assets/Background.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-
-.banner::before,
-.banner2::before {
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-image: url("../Assets/BackgroundFilter.png");
   border-radius: 25px;
 }
 
-.banner.banner-commun h1 {
+.banner2 {
+  background: url("../Assets/BackgroundFilter.png"), url("../Assets/Background.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+
+.banner h1 {
   display: flex;
-  position: absolute;
-  margin: auto;
-  content: "";
-  margin: 0;
-  inset: 0;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  height: 100%;
 }
 
 
 
 @media (max-width: 728px) {
-  .banner h1 {
-      font-size: 1.5rem;
+  .banner h1 { 
+    font-size: 1.5rem; 
   }
 }
 
 @media (max-width: 450px) {
-  .banner h1 {
-      font-size: 1rem;
+  .banner h1 { 
+    font-size: 1rem; 
   }
-
   .banner, .banner2 {
     margin-top: 0px;
     height: 111px;
-    border-radius: 10px;
+    background-position:left;
   }
-
-  .banner::before, .banner2::before {
+  .banner2, .banner, .banner-commun {
     border-radius: 10px;
   }
 }
