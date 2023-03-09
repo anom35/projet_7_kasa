@@ -13,7 +13,7 @@ function Carousel({pictures}) {
   return (
     <div className='carousel'>
       <div className='div-image'>
-        <img src={pictures[cpt]} className="classImage" key={"car-"+cpt} alt="" />
+        <img src={pictures[cpt]} className="classImage" key={"car-"+cpt} alt={"photo "+cpt} />
       </div>
       <div>
         <button onClick={() => setCpt(cpt - 1)}>{cpt}
