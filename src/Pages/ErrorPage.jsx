@@ -8,7 +8,7 @@ import "../Styles/ErrorPage.css"
 
 function ErrorPage() {
   return (
-    <div>
+    <>
       <Shaping>
         <Navbar />
         <div className='error commun-error'>
@@ -18,7 +18,7 @@ function ErrorPage() {
         </div>
       </Shaping>
       <Footer />
-    </div>
+    </>
   )
 }
 

@@ -17,19 +17,25 @@ function Logement() {
   // récupère l'ID de l'URL
   const [searchParams] = useSearchParams();
   const [idLogement] = useState(searchParams.get('_id'));
+  
   // cherche l'id dans le fichier logements.json
   const record = records.find(element => element.id === idLogement)
-  // undefined indique que l'URL à été modifié manuellement, envoi sur la page d'erreur
+  
+  // si find renvoi undefined, ca indique que l'URL à été modifié manuellement
+  // redirection vers la page d'erreur
   if (record === undefined) return(<ErrorPage />)
 
   const arrayStars = [1, 2, 3, 4, 5]
 
   return (
-    <div  className='logement'>
+    <div className='logement'>
       <Shaping>
         <Navbar />
+
+        {/* carousel d'images */}
         <Carousel pictures={record.pictures}/>
 
+        {/* 1 - affiche le titre, l'emplacement et les tags */}
         <div className='ficheLogement'>
           <div className='div-description'>
             <h1>{record.title}</h1>
@@ -42,13 +48,15 @@ function Logement() {
               }
             </div>
           </div>
+
+          {/* 2 - Affiche le nom, la photo et les étoiles */}
           <div className='bloc-stars'>
             <div className='div-etoiles'>
               <p>{record.host.name}</p>
               <img src={record.host.picture} alt={record.title} />
             </div>
             
-            {/* Met et colorie les étoiles */}
+            {/* 3 - Met et colorie les étoiles */}
             <div className='stars'>
               {
                 arrayStars.map(element => {
@@ -62,14 +70,20 @@ function Logement() {
                 })
               }
             </div>
+            {/* 3 - fin */}
+
           </div>
+          {/* 2 - fin */}
+
         </div>
-        
+        {/* 1 - fin */}
+
+
+        {/* affiche la description et les équipements */}
         <div className='collapseLogement'>
             <Collapse title="Description" content={record.description} />
             <CollapseList title="Equipements" content={record.equipments} />
         </div>
-
 
       </Shaping>
       <Footer />

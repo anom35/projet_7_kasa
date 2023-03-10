@@ -9,7 +9,7 @@ import "../Styles/Home.css"
 
 function Home() {
   return (
-    <div>
+    <div role="main">
       <Shaping>
         <Navbar />
         <Banner />
