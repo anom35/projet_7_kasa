@@ -23,7 +23,7 @@ function Carousel({pictures}) {
     let suite =""
     if (window.screen.width > 450) {
       suite = <p>{cpt+1}/{nbrePictures+1}</p>
-    } else suite = ""
+    }
     
     return(
       <div className='carousel'>
