@@ -40,6 +40,7 @@
 .description-content {
   position: relative;
   top: -10px;
+  font-size: 18px;
   color: var(--colorRed);
   background-color: #f6f6f6;
   margin: 0;
@@ -52,6 +53,7 @@
 .description-content-list {
   position: relative;
   top: -10px;
+  font-size: 18px;
   margin: 0;
   color: var(--colorRed);
   background-color: #f6f6f6;

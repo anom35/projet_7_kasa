@@ -20,11 +20,6 @@ function Carousel({pictures}) {
       </div>
     )
   } else { 
-    let suite =""
-    if (window.screen.width > 450) {
-      suite = <p>{cpt+1}/{nbrePictures+1}</p>
-    }
-    
     return(
       <div className='carousel'>
 
@@ -40,7 +35,7 @@ function Carousel({pictures}) {
             <img src={chevronDroit} className='classChevronDroit' alt={'flèche droite pour changer de photo '+cpt} />
           </button>
         </div>
-        {suite}
+        <p className='compteurImages'>{cpt+1}/{nbrePictures+1}</p>
       </div>
     )
   }

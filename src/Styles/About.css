@@ -3,7 +3,7 @@
   color: var(--colorRed);
   flex-direction: column;
   padding-inline: 108px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .flex {
