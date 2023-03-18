@@ -128,12 +128,21 @@
 
 
 @media (max-width: 450px) {
+  .tags {
+    margin-right: 10px;
+  }
+  .div-tags {
+    gap: 0;
+  }
+  .bloc-stars {
+    margin-top: 10px;
+  }
   .compteurImages {
     display: none;
   }
   .description-content,
   .equipement-content {
-      font-size: 12px;
+      font-size: 12px; 
   }
 
   .description-header,
@@ -147,7 +156,7 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 401px) {
   .stars {
       font-size: 15px;
       gap: 5px;
