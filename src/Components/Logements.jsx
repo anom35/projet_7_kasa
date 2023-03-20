@@ -1,5 +1,5 @@
 import React from 'react'
-import Fiche from './FicheLogement'
+import { Link } from "react-router-dom"
 
 import "../Styles/Logements.css"
 
@@ -11,12 +11,17 @@ function Logements() {
       {
         records.map( record => { 
           return (
-            <Fiche 
-              key={record.id} 
-              id={record.id} 
-              cover={record.cover} 
-              title={record.title} 
-            />)
+
+            <div className='fiche-logement'>
+              <Link to={{ 
+                  pathname: "/Logement",
+                  search: "?_id="+record.id 
+                }}>
+                <img src={record.cover} alt={record.title} />
+                <h3>{record.title}</h3>
+              </Link>
+            </div>
+          )
          })
       }
     </div>
