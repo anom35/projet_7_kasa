@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link } from "react-router-dom"
 import Shaping from "../Layout/Shaping"
 import Navbar from "../Layout/Navbar"
@@ -8,7 +8,8 @@ import "../Styles/ErrorPage.css"
 
 function ErrorPage() {
   return (
-    <>
+    <Fragment>
+
       <Shaping>
         <Navbar />
         <div className='error commun-error'>
@@ -17,8 +18,9 @@ function ErrorPage() {
           <p><Link to="/">Retourner sur la page d’accueil</Link></p>
         </div>
       </Shaping>
+      
       <Footer />
-    </>
+    </Fragment>
   )
 }
 

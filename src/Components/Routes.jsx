@@ -6,6 +6,7 @@ import About from "../Pages/About"
 import Logement from "../Pages/Logement"
 import ErrorPage from "../Pages/ErrorPage"
 
+// défini les routes, c'ette fonction est appelé dans index.js
 function Routes() {
     const router = createBrowserRouter([
         { path:"/", element:<Home />, errorElement:<ErrorPage /> },

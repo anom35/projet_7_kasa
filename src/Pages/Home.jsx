@@ -11,6 +11,7 @@ import "../Styles/Home.css"
 function Home() {
   return (
     <div role="main">
+
       <Shaping>
         <Navbar />
         <Banner>
@@ -18,6 +19,7 @@ function Home() {
         </Banner>
         <Logements />
       </Shaping>
+      
       <Footer />
     </div>
   )
