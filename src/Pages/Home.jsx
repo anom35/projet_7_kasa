@@ -4,6 +4,7 @@ import Shaping from '../Layout/Shaping' // mise en forme 100px droite gauche
 import Banner from '../Components/Banner'
 import Footer from "../Layout/Footer"
 import Logements from '../Components/Logements'
+import BannerHome from '../Components/BannerHome'
 
 import "../Styles/Home.css"
 
@@ -12,7 +13,9 @@ function Home() {
     <div role="main">
       <Shaping>
         <Navbar />
-        <Banner />
+        <Banner>
+          <BannerHome />
+        </Banner>
         <Logements />
       </Shaping>
       <Footer />

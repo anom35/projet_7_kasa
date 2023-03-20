@@ -16,7 +16,7 @@ function About() {
     <div className='flex'>
       <Shaping>
         <Navbar />
-        <Banner element="about" />
+        <Banner><div className="banner2 banner-commun"></div></Banner>
         <div className='about'>
           <div><Collapse title="Fiabilité" content={fiabilite} /></div>
           <div><Collapse title="Respect" content={respect} /></div>

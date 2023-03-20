@@ -7,8 +7,8 @@
 
 .visible.collapse ul {
   color: var(--colorRed);
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 36px 27px 19px 18px;
+  margin: 0;
   text-align: justify;
   list-style-type: none;
 }
@@ -53,7 +53,6 @@
   color: var(--colorRed);
   background-color: #f7f7f7;
   margin: 0;
-  padding: 20px 0px 10px 0px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgb(193, 191, 191);
   z-index: -1;    /* passe la zone de contenu sous la zone de titre*/

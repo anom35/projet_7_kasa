@@ -97,7 +97,7 @@
 /** média query */
 
 
-@media (max-width: 686px) {
+@media (max-width: 768px) {
   .compteurImages {
     display: none;
   }
@@ -141,7 +141,6 @@
   .equipement-content {
       font-size: 12px; 
   }
-
   .description-header,
   .equipements-header {
       font-size: 13px;
@@ -158,30 +157,24 @@
       font-size: 15px;
       gap: 5px;
   }
-
   .carrousel-logement img {
       height: 255px;
   }
-
   .div-description h1 {
       font-size: 18px;
   }
-
   .div-description h4 {
       font-size: 14px;
       margin: 0;
   }
-
   .div-etoiles {
       align-items: center;
   }
-
   .div-etoiles img {
       width: 45px;
       height: 45px;
       margin: 0;
   }
-
   .div-etoiles p {
       display: flex;
       justify-content: right;
@@ -190,6 +183,5 @@
       margin: 0;
       padding: 0;
   }
-
 }
 
