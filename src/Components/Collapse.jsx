@@ -7,15 +7,10 @@ import "../Styles/Collapse.css"
 
 function Collapse({title, content}) {
 
-    // variable logique qui défini si le contenu s'affiche ou pas
     const [contentVisible, setContentVisible] = useState(false)
-    // fonction qui inverse le contenu de la valeur au clic dans le header
     const affContent = () => { setContentVisible(!contentVisible) }
 
-    // selon contentVisible, il sera utilise la classe "visible" ou "hidden" + "collapse"
     const collapseContent = (contentVisible ? "visible" : "hidden") + " collapse"
-
-    // modifie le chevron selon la valeur de contentVisible
     const collapseChevron = (contentVisible ? chevronUp : chevronDown)
 
     return (
@@ -28,7 +23,7 @@ function Collapse({title, content}) {
                 </div>
             </div>
             <div className={collapseContent}>
-                <p className='description-content'>{content}</p>
+                <ul>{content}</ul>
             </div>
         </div>
     )

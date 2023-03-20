@@ -99,7 +99,7 @@
 
 @media (max-width: 686px) {
   .compteurImages {
-    display: visible;
+    display: none;
   }
   .ficheLogement,
   .collapseLogement {
@@ -136,9 +136,6 @@
   }
   .bloc-stars {
     margin-top: 10px;
-  }
-  .compteurImages {
-    display: none;
   }
   .description-content,
   .equipement-content {

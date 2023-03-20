@@ -6,7 +6,6 @@ import Footer from "../Layout/Footer"
 import Shaping from "../Layout/Shaping"
 import ErrorPage from "../Pages/ErrorPage"
 import Collapse from '../Components/Collapse'
-import CollapseList from '../Components/CollapseList'
 import Carousel from '../Components/Carousel'
 
 import "../Styles/Logement.css"
@@ -26,6 +25,10 @@ function Logement() {
   if (record === undefined) return(<ErrorPage />)
 
   const arrayStars = [1, 2, 3, 4, 5]
+
+  const equipements = record.equipments.map((element, index) => {
+    return (<li className='description-content' key={"equip-"+index.toString()}>{element}</li>)
+  })
 
   return (
     <div className='logement'>
@@ -82,7 +85,7 @@ function Logement() {
         {/* affiche la description et les équipements */}
         <div className='collapseLogement'>
             <Collapse title="Description" content={record.description} />
-            <CollapseList title="Equipements" content={record.equipments} />
+            <Collapse title="Equipements" content={equipements} />
         </div>
 
       </Shaping>
