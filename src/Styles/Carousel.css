@@ -53,7 +53,7 @@
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 520px) {
   .carousel {
     height: 255px;
   }
