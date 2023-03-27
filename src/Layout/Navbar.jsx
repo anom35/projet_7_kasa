@@ -1,5 +1,5 @@
 import {Link, NavLink} from "react-router-dom"
-import logo from '../Assets/Logo.png'
+import logo from '../Assets/logo.png'
 import '../Styles/Navbar.css'
 
 function Banner() {
