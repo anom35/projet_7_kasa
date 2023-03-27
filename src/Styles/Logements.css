@@ -32,16 +32,16 @@
   cursor: pointer;
 }
 
+
 .logements {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   background: #F7F7F7;
   border-radius: 25px;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 40px 40px;
-  gap: 30px
+  gap: 30px;
 }
 
 .logements a {
