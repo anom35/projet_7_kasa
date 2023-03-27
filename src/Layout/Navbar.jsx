@@ -4,33 +4,33 @@ import '../Styles/Navbar.css'
 
 function Banner() {
 	return (
-    <div className='navbar'>
-      <Link to="/">
-        <img src={logo} alt='Logo du site Kasa' />
-      </Link>
-      <nav>
-        {/* <ul> */}
-          {/* lien vers l'accueil */}
-          <NavLink 
-            to="/"
-            style={({ isActive }) => isActive ? { textDecoration: "underline" } : undefined }>
-            {/* <li> */}
-              Accueil
-            {/* </li> */}
-          </NavLink>
+        <div className='navbar'>
+            <Link to="/">
+                <img src={logo} alt='Logo du site Kasa' />
+            </Link>
+            <nav>
+                <ul>
+                    {/* lien vers l'accueil */}
+                    <li>
+                        <NavLink 
+                            to="/"
+                            style={({ isActive }) => isActive ? { textDecoration: "underline" } : undefined }>
+                            Accueil
+                        </NavLink>
+                    </li>
 
-          {/* lien vers A propos */}
-          <NavLink 
-            to="/about"
-            style={({ isActive }) => isActive ? { textDecoration: "underline" } : undefined }>
-            {/* <li> */}
-              A Propos
-              {/* </li> */}
-          </NavLink>
-        {/* </ul> */}
-      </nav>
-    </div>
-  )
+                    {/* lien vers A propos */}
+                    <li>
+                        <NavLink 
+                            to="/about"
+                            style={({ isActive }) => isActive ? { textDecoration: "underline" } : undefined }>
+                            A Propos
+                        </NavLink>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    )
 }
 
 export default Banner
