@@ -69,6 +69,6 @@
   }
   .visible.collapse ul {
     font-size: 12px;
-    padding: 23px 7px 1.3px 11.5px;
+    padding: 23px 7px 5px 11.5px; /* j'ai mis 5px en bas au lieu de 1.3px pour une question ésthétique */
   }
 }
