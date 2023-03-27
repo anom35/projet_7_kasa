@@ -9,21 +9,25 @@ function Banner() {
         <img src={logo} alt='Logo du site Kasa' />
       </Link>
       <nav>
-        <ul>
+        {/* <ul> */}
           {/* lien vers l'accueil */}
           <NavLink 
             to="/"
             style={({ isActive }) => isActive ? { textDecoration: "underline" } : undefined }>
-            <li>Accueil</li>
+            {/* <li> */}
+              Accueil
+            {/* </li> */}
           </NavLink>
 
           {/* lien vers A propos */}
           <NavLink 
             to="/about"
             style={({ isActive }) => isActive ? { textDecoration: "underline" } : undefined }>
-            <li>A Propos</li>
+            {/* <li> */}
+              A Propos
+              {/* </li> */}
           </NavLink>
-        </ul>
+        {/* </ul> */}
       </nav>
     </div>
   )

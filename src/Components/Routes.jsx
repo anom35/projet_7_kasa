@@ -12,11 +12,11 @@ function Routes() {
         { path:"/", element:<Home />, errorElement:<ErrorPage /> },
         { path: "/about", element: <About />, errorElement:<ErrorPage /> },
         { path: "/logement", element: <Logement />, errorElement:<ErrorPage /> },
-        { path: "*", element: <ErrorPage /> }  // toutes les routes non trouvés iront vers errorPage
+        { path: "*", element: <ErrorPage /> }  // toutes les routes non trouvées iront vers errorPage
     ]);
     ReactDOM.createRoot(document.getElementById("root")).render(
         <React.StrictMode>
-        <RouterProvider router={router} />
+            <RouterProvider router={router} />
         </React.StrictMode>
     );
         
