@@ -1,11 +1,13 @@
 .fiche-logement {
-  width: 30%;
+  /* width: 20%; */
   background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
   border-radius: 10px;
   transition: 0.3s;
-  min-width: 240px;
+  min-width: 300px;
+  width: 100%;
   height: 340px;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .fiche-logement img {
@@ -32,16 +34,19 @@
   cursor: pointer;
 }
 
-
 .logements {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   background: #F7F7F7;
   border-radius: 25px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 40px 40px;
-  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 30px;
+  gap: 50px;
+}
+
+.logements div {
+  width: 22%;
 }
 
 .logements a {
@@ -49,19 +54,45 @@
 }
 
 
-@media (max-width: 1096px) {
+
+@media (max-width: 1626px) {
   .fiche-logement {
-    width: 45%;
-    min-width: 0px;
+    min-width: 300px;
+    width: 100%;
+  }
+  .logements div {
+    width: 30%;
+ }
+}
+
+@media (max-width: 1276px) {
+  .logements div {
+     width: 47%;
+  }
+} 
+
+ @media (max-width: 1110px) {
+  .fiche-logement {
+    width: 100%;
+  }
+  .logements div {
+    width: 46%;
   }
 }
 
-@media (max-width: 768px) {
-  .fiche-logement { width: 100%; }
+@media (max-width: 926px) {
+  .fiche-logement { 
+    width: 100%; 
+  }
+  .logements div {
+    width: 100%;
+  }
+  .logements {
+    gap: 20px;
+  }
 }
 
-
-@media (max-width: 660px) {
+ @media (max-width: 660px) {
   .logements {
       background: #FFF;
       padding: 0px;
@@ -81,9 +112,8 @@
   .fiche-logement h3 {
     height: 60px;
     margin: 0px 15px;
-}
-
-.fiche-logement img {
-    height: 188px;
-}
-}
+  }
+  .fiche-logement img {
+      height: 188px;
+  }
+} 
