@@ -1,3 +1,35 @@
+/*
+*    Utilisation de GRID au lieu de FLEX.
+-
+-    Avec Flex, lors de l'affichage des cartes logements, la ligne du bas n'ayant pas 
+-    une totalité d'éléments, ceux-ci se centrent et sur les conseils de mon Mentor 
+~    ATHECK GABRIEL 
+-    cette disposition n'est pas une bonne habitude à prendre.
+-    Il m'a conseillé de faire en sorte qu'ils soient affichés en partant de la gauche.
+*/
+
+/* DÉBUT: conteneur d'affichage des cartes logements */
+.logements {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: center;
+  background: #F7F7F7;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 50px;
+}
+
+.logements a {
+  text-decoration: none;
+}
+/* FIN: conteneur d'affichage des cartes logements */
+
+
+
+/* DÉBUT: carte logement */
 .fiche-logement {
   background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #833131);
   border-radius: 10px;
@@ -30,39 +62,28 @@
   box-shadow: 0px 0px 10px #473030;
   cursor: pointer;
 }
-
-.logements {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  grid-column-gap: 30px;
-  grid-row-gap: 20px;
-  justify-content: center;
-  background: #F7F7F7;
-  border-radius: 25px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 30px;
-}
-
-.logements a {
-  text-decoration: none;
-}
+/* FIN: carte logement */
 
 
+/* Responsive */
 @media (max-width: 926px) {
-  .fiche-logement { 
-    width: 100%; 
-  }
-  .logements {
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  .fiche-logement { width: 100%; }
+  .logements { 
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); 
   }
 }
 
  @media (max-width: 660px) {
   .logements {
-      background: #FFF;
-      padding: 0;
+    background: #FFF;
+    padding: 0;
+    grid-row-gap: 20px;
   }
+  .fiche-logement {
+    min-width: 200px;
+    height: 255px;
+  }
+  .fiche-logement img { height: 188px; }
 }
 
 @media (max-width: 400px) {
@@ -70,12 +91,5 @@
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       margin-top: 20px;
       padding: 0;
-  }
-  .fiche-logement {
-    min-width: 300px;
-    height: 255px;
-  }
-  .fiche-logement img {
-      height: 188px;
   }
 } 
