@@ -4,11 +4,11 @@ import { useSearchParams } from 'react-router-dom'
 import Navbar from "../Layout/Navbar"
 import Footer from "../Layout/Footer"
 import Shaping from "../Layout/Shaping"
-import ErrorPage from "../Pages/ErrorPage"
+import ErrorPage from "./ErrorPage"
 import Collapse from '../Components/Collapse'
 import Carousel from '../Components/Carousel'
 
-import "../Styles/Logement.css"
+import "../Styles/Card.css"
 import records from "../Datas/logements.json"
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import records from "../Datas/logements.json"
-import "../Styles/Logements.css"
+import "../Styles/Cards.css"
 
 function Logements() {
   return (
