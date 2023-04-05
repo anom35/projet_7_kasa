@@ -13,85 +13,77 @@ import records from "../Datas/logements.json"
 
 
 function Logement() {
-  // récupère l'ID de l'URL
-  const [searchParams] = useSearchParams();
-  const [idLogement] = useState(searchParams.get('_id'));
-  
-  // cherche l'id dans le fichier logements.json
-  const record = records.find(element => element.id === idLogement)
-  
-  // si find renvoi undefined, ca indique que l'URL à été modifié manuellement
-  // redirection vers la page d'erreur
-  if (record === undefined) return(<ErrorPage />)
+    // récupère l'ID de l'URL
+    const [searchParams] = useSearchParams();
+    const [idLogement] = useState(searchParams.get('_id'));
+    
+    // cherche l'id dans le fichier logements.json
+    const record = records.find(element => element.id === idLogement)
+    
+    // si find renvoi undefined, ca indique que l'URL à été modifié manuellement
+    // redirection vers la page d'erreur
+    if (!record) return(<ErrorPage />)
 
-  const arrayStars = [1, 2, 3, 4, 5]
+    const arrayStars = [1, 2, 3, 4, 5]
 
-  const equipements = record.equipments.map((element, index) => {
-    return (<li className='description-content' key={"equip-"+index.toString()}>{element}</li>)
-  })
+    const equipements = record.equipments.map((element, index) => {
+        return (<li className='description-content' key={"equip-"+index.toString()}>{element}</li>)
+    })
 
-  return (
-    <div className='logement'>
-      <Shaping>
-        <Navbar />
+    return (
+        <div className='logement'>
+        <Shaping>
+            <Navbar />
 
-        {/* carousel d'images */}
-        <Carousel pictures={record.pictures}/>
+            {/* carousel d'images */}
+            <Carousel pictures={record.pictures}/>
 
-        {/* 1 - affiche le titre, l'emplacement et les tags */}
-        <div className='ficheLogement'>
-          <div className='div-description'>
-            <h1>{record.title}</h1>
-            <h4>{record.location}</h4>
-            <div className='div-tags'>
-              {
-                record.tags.map((element) => {
-                  return(<p className='tags' key={"tags-"+element}>{element}</p>)
-                })
-              }
+            {/* 1 - affiche le titre, l'emplacement et les tags */}
+            <div className='ficheLogement'>
+                <div className='div-description'>
+                    <h1>{record.title}</h1>
+                    <h4>{record.location}</h4>
+                    <div className='div-tags'>
+                        { record.tags.map((element) => {
+                            return(<p className='tags' key={"tags-"+element}>{element}</p>)
+                        })}
+                    </div>
+                </div>
+
+                {/* 2 - Affiche le nom, la photo et les étoiles */}
+                <div className='bloc-stars'>
+                    <div className='div-etoiles'>
+                        <p>{record.host.name}</p>
+                        <img src={record.host.picture} alt={record.title} />
+                    </div>
+                    
+                    {/* 3 - Met et colorie les étoiles */}
+                    <div className='stars'>
+                        {
+                            arrayStars.map(element => {
+                            const nbreEtoiles = parseInt(record.rating)
+                            return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'span1' : 'span2'}>★</span>)})
+                        }
+                    </div>
+                    {/* 3 - fin */}
+
+                </div>
+                {/* 2 - fin */}
+
             </div>
-          </div>
+            {/* 1 - fin */}
 
-          {/* 2 - Affiche le nom, la photo et les étoiles */}
-          <div className='bloc-stars'>
-            <div className='div-etoiles'>
-              <p>{record.host.name}</p>
-              <img src={record.host.picture} alt={record.title} />
+
+            {/* affiche la description et les équipements */}
+            <div className='collapseLogement'>
+                <Collapse title="Description" content={record.description} />
+                <Collapse title="Equipements" content={equipements} />
             </div>
-            
-            {/* 3 - Met et colorie les étoiles */}
-            <div className='stars'>
-              {
-                arrayStars.map(element => {
-                  const nbreEtoiles = parseInt(record.rating)
-                  if (element <= nbreEtoiles) { 
-                    return(<span key={"star-"+element} className="span1">★</span>) 
-                  } 
-                  else { 
-                    return(<span key={"star-"+element} className="span2">★</span>) 
-                  }
-                })
-              }
-            </div>
-            {/* 3 - fin */}
 
-          </div>
-          {/* 2 - fin */}
-
+        </Shaping>
+        <Footer />
         </div>
-        {/* 1 - fin */}
-
-
-        {/* affiche la description et les équipements */}
-        <div className='collapseLogement'>
-            <Collapse title="Description" content={record.description} />
-            <Collapse title="Equipements" content={equipements} />
-        </div>
-
-      </Shaping>
-      <Footer />
-    </div>
-  )
+    )
 }
 
 export default Logement

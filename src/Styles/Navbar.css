@@ -48,6 +48,6 @@
 
 @media (max-width: 520px) {
   .navbar nav a { font-size: 12px; }
-  .navbar img { height: 45px; }
-  .navbar nav { justify-content: center; }
+  .navbar img {   height: 45px; }
+  .navbar nav {   justify-content: center; }
 }

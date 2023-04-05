@@ -6,13 +6,11 @@
   justify-content: center;
   height: 209px;
   background: black;
-  color: white;
+  color: var(--colorWhite);;
   font-size: 24px;
 }
 
-.img_footer { 
-  margin: 0 auto; 
-}
+.img_footer { margin: 0 auto; }
 .img_footer img { 
   height: 60px; 
   width: 163px; 

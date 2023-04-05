@@ -1,7 +1,7 @@
 .banner-commun {
   margin-top: 30px;
   height: 223px;
-  color: #FFF;
+  color: var(--colorWhite);
   border-radius: 25px;
   box-shadow: 0px 5px 15px rgb(66, 58, 58);
 }
@@ -20,7 +20,6 @@
   border-radius: 25px;
 }
 
-
 .banner h1 {
   display: flex;
   align-items: center;
@@ -32,21 +31,15 @@
 
 
 @media (max-width: 650px) {
-  .banner h1 { 
-    font-size: 1.5rem; 
-  }
+  .banner h1 { font-size: 1.5rem; }
 }
 
 @media (max-width: 450px) {
-  .banner h1 { 
-    font-size: 1rem; 
-  }
+  .banner h1 { font-size: 1rem; }
   .banner, .banner2 {
     margin-top: 0px;
     height: 111px;
     background-position:left;
   }
-  .banner2, .banner, .banner-commun {
-    border-radius: 10px;
-  }
+  .banner2, .banner, .banner-commun { border-radius: 10px; }
 }
