@@ -7,9 +7,5 @@
 
 
 @media (max-width: 768px) {
-  .shaping { margin-inline: 50px; }
-}
-
-@media (max-width: 520px) {
   .shaping { margin-inline: 10px; }
 }
