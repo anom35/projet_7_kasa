@@ -101,24 +101,18 @@
 
 @media (max-width: 768px) {
   .compteurImages { display: none; }
-
   .ficheLogement, .collapseLogement { display: block; }
-
   .description { margin-bottom: 30px; }
-
   .bloc-stars {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
   }
-  
   .stars {
       align-items: center;
       justify-content: left;
   }
-  
   .tags { font-size: 10px; }
-
   .div-tags { gap: 10px; }
 }
 
@@ -126,33 +120,23 @@
 
 @media (max-width: 450px) {
   .tags { margin-right: 10px; }
-
   .div-tags { gap: 0; }
-
   .bloc-stars { margin-top: 10px; }
-
   .description-content, .equipement-content { font-size: 12px; }
-
   .description-header, .equipements-header {
       font-size: 13px;
       padding: 8px 0px 8px 20px;
   }
-
   .span1, .span2 { font-size: 18px; }
 }
 
 
 @media (max-width: 401px) {
   .stars { font-size: 15px; gap: 5px; }
-
   .carrousel-logement img { height: 255px; }
-
   .div-description h1 { font-size: 18px; }
-
   .div-description h4 { font-size: 14px; margin: 0; }
-
   .div-etoiles { align-items: center; }
-  
   .div-etoiles img {
       width: 45px;
       height: 45px;
