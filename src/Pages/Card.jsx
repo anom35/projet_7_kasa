@@ -46,8 +46,8 @@ function Card() {
                     <h1>{record.title}</h1>
                     <h4>{record.location}</h4>
                     <div className='div-tags'>
-                        { record.tags.map((element) => {
-                            return(<p className='tags' key={"tags-"+element}>{element}</p>)
+                        { record.tags.map((element, index) => {
+                            return(<p className='tags' key={"tags-"+index}>{element}</p>)
                         })}
                     </div>
                 </div>
