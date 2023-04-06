@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
 
 import Navbar from "../Layout/Navbar"
@@ -11,8 +11,9 @@ import Carousel from '../Components/Carousel'
 import "../Styles/Card.css"
 import records from "../Datas/logements.json"
 
+const arrayStars = [1, 2, 3, 4, 5]
 
-function Logement() {
+function Card() {
     // récupère l'ID de l'URL
     const [searchParams] = useSearchParams();
     const [idLogement] = useState(searchParams.get('_id'));
@@ -20,15 +21,16 @@ function Logement() {
     // cherche l'id dans le fichier logements.json
     const record = records.find(element => element.id === idLogement)
     
-    // si find renvoi undefined, ca indique que l'URL à été modifié manuellement
-    // redirection vers la page d'erreur
+    // test l'utilisation de useMemo
+    const equipements = useMemo(() => (
+        record.equipments.map((element, index) => (
+          <li className='description-content' key={"equip-"+index.toString()}>{element}</li>
+        ))
+      ), [record.equipments]);
+
+      // si l'URL à été modifié manuellement, redirection vers la page d'erreur
     if (!record) return(<ErrorPage />)
 
-    const arrayStars = [1, 2, 3, 4, 5]
-
-    const equipements = record.equipments.map((element, index) => {
-        return (<li className='description-content' key={"equip-"+index.toString()}>{element}</li>)
-    })
 
     return (
         <div className='logement'>
@@ -86,4 +88,4 @@ function Logement() {
     )
 }
 
-export default Logement
+export default Card
