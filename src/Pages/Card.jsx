@@ -50,7 +50,7 @@ function Card() {
                     </div>
                 </div>
 
-                {/* 2 - Affiche le nom, la photo et les étoiles */}
+                {/* 2 - Affiche le nom du propriétaireet sa photo */}
                 <div className='bloc-stars'>
                     <div className='div-etoiles'>
                         <p>{record.host.name}</p>
