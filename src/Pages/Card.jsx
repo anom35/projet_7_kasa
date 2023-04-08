@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 
 import Navbar from "../Layout/Navbar"
@@ -21,16 +21,14 @@ function Card() {
     // cherche l'id dans le fichier logements.json
     const record = records.find(element => element.id === idLogement)
     
-    // test l'utilisation de useMemo
-    const equipements = useMemo(() => (
-        record.equipments.map((element, index) => (
-          <li className='description-content' key={"equip-"+index.toString()}>{element}</li>
-        ))
-      ), [record.equipments]);
-
-      // si l'URL à été modifié manuellement, redirection vers la page d'erreur
+    // si l'URL à été modifié manuellement, redirection vers la page d'erreur
     if (!record) return(<ErrorPage />)
 
+    // test l'utilisation de useMemo
+    const equipements = record.equipments.map((element, index) => (
+          <li className='description-content' key={"equip-"+index.toString()}>{element}</li>
+        ))
+    
 
     return (
         <div className='logement'>
