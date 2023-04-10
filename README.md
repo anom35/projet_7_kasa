@@ -4,6 +4,7 @@
 ## Formation OpenClassrooms: Développeur Web
 
 ```css
-Le projet Kasa, est un projet de développement d'un site web de location de logements entre particuliers.
-Ecrit avec la technologie Réact, il permet de mettre en oeuvre la création de composants, de gestion des erreurs dans les URLS tout en étant 100% responsive.
+Le projet Kasa, est un projet de developpement d'un site web de location de logements entre particuliers.
+Ecrit avec la technologie React, il permet de mettre en oeuvre la creation de composants, 
+de gestion des erreurs dans les URLS tout en etant 100% responsive.
 ```
