@@ -16,13 +16,14 @@ function Carousel({pictures}) { //reçois un tableau avec les URL des images
     return(
         <div className='carousel'>
 
-            <div className='div-image'>  {/* affiche image */}
+            {/* affiche la première image */}
+            <div className='div-image'>  
                 <img src={pictures[index]} className="classImage" key={"car-"+index} alt={"photo "+index} />
             </div>
 
             {/* si plus d'une image, alors ce code sera exécuté */}
             {totalPictures > 0 && ( 
-                <div> {/* les boutons qui afficherons les chevrons */}
+                <div> {/* les boutons pour les chevrons droit et gauche, servent pour naviguer au sein du Carousel */}
                     <button onClick={() => setIndex(index - 1)}>{index}
                         <img src={chevronGauche} className='classChevronGauche' alt={'flèche gauche pour changer de photo '+index} />
                     </button>
@@ -32,7 +33,8 @@ function Carousel({pictures}) { //reçois un tableau avec les URL des images
                 </div>
             )}
             {totalPictures > 0 && (
-                <div className='div-compteur'> {/* compteur d'images */}
+                // compteur d'images qui ne s'affiche qu'en version Desktop et lorsqu'il y a plusieurs images
+                <div className='div-compteur'> 
                     <p className='compteurImages'>
                         {index+1}/{totalPictures+1}
                     </p>

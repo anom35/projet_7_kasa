@@ -6,12 +6,13 @@ import '../Styles/Navbar.css'
 function Navbar() {
     const isActiveStyle = { textDecoration: "underline" };
 
-    // Utilisation d'un tableau pour le cas ou il y aurait des choix de menus à ajouter
+    // Utilisation d'un tableau en prévision d'un ajout au menu
     const menuItems = [
         { to: "/", label: "Accueil" },
         { to: "/about", label: "A Propos" },
     ];
 
+    // défini la choix actif et affiche le label du menu
     const menuItem = ({ to, label }) => (
         <li key={to}>
             <NavLink to={to} style={({ isActive }) => isActive ? isActiveStyle : undefined }>
@@ -19,6 +20,8 @@ function Navbar() {
             </NavLink>
         </li>
     );
+
+    // affiche le logo et boucle sur les éléments du menu
     return (
         <div className='navbar'>
             <Link to="/">
