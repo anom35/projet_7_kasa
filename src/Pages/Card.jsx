@@ -61,8 +61,9 @@ function Card() {
                         <div className='stars'>
                             {
                                 arrayStars.map(element => {
-                                const nbreEtoiles = parseInt(record.rating)
-                                return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'span1' : 'span2'}>★</span>)})
+                                    const nbreEtoiles = parseInt(record.rating)
+                                    return(<span key={"star-"+element} className={element <= nbreEtoiles ? 'span1' : 'span2'}>★</span>)
+                                })
                             }
                         </div>
                     </div>
