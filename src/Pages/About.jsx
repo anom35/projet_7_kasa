@@ -24,7 +24,7 @@ function About() {
                     <div><Collapse title="Fiabilité" content={fiabilite} /></div>
                     <div><Collapse title="Respect" content={respect} /></div>
                     <div><Collapse title="Service" content={service} /></div>
-                    <div><Collapse title="Responsabilité" content={securite} /></div>
+                    <div><Collapse title="Sécurité" content={securite} /></div>
                 </div>
             </Shaping>
             <Footer />
