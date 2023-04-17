@@ -24,7 +24,7 @@ function Card() {
     // si l'URL à été modifié manuellement, redirection vers la page d'erreur
     if (!record) return(<ErrorPage />)
 
-    // test l'utilisation de useMemo
+    // récupère la liste des équipements
     const equipements = record.equipments.map((element, index) => (
           <li className='description-content' key={"equip-"+index.toString()}>{element}</li>
         ))

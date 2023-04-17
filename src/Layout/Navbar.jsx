@@ -6,7 +6,7 @@ import '../Styles/Navbar.css'
 function Navbar() {
     const isActiveStyle = { textDecoration: "underline" };
 
-    // Utilisation d'un tableau en prévision d'un ajout au menu
+    // Utilisation d'un tableau en prévision d'ajout au menu
     const menuItems = [
         { to: "/", label: "Accueil" },
         { to: "/about", label: "A Propos" },
